@@ -2,9 +2,7 @@
 
 ## What this is
 
-This is a conversational AI chatbot purpose-built for researchers working at the intersection of AI/ML and drug discovery. All three services are scoped to this domain: the local collection contains ~1000 PubMed abstracts on machine learning, deep learning, and AI applied to drug discovery and design; the live search tools are tuned to return relevant results in that space; and the Postdoc persona is a domain expert in exactly this literature.
-
-The chatbot plays the role of a slightly burnt-out, wry senior postdoc who has read everything in the AI and drug discovery literature. You ask it research questions, it digs through the literature and tells you what it found — with dry humor and minimal enthusiasm. It's helpful. It just doesn't perform excitement about it.
+This is a conversational AI chatbot that plays the role of a slightly burnt-out, wry senior postdoc who has read everything in the AI and drug discovery literature. You ask it research questions, it digs through the literature and tells you what it found — with dry humor and minimal enthusiasm. It's helpful. It just doesn't perform excitement about it.
 
 The chatbot has three services it can call depending on your question, and it decides which one to use on its own.
 
@@ -16,7 +14,7 @@ The chatbot has three services it can call depending on your question, and it de
 
 Uses the NCBI Entrez API via Biopython to search PubMed in real time based on your question. Returns the top 5 results, summarized in natural prose. Good for "find me papers on X" or "what's been published recently on Y."
 
-I used the same Biopython Entrez pattern from the abstract-fetching script I wrote earlier in the course (`fetch_abstracts_script.ipynb`). The API is free and doesn't require a key — just an email address registered with NCBI.
+I used the same Biopython Entrez pattern from the abstract-fetching script I wrote earlier during my time working as a technical lead at my job and could adapt it to this course (`fetch_abstracts_script.ipynb`). The API is free and doesn't require a key — just an email address registered with NCBI.
 
 ### Service 2 — Semantic Search (`tools_chroma.py`)
 
